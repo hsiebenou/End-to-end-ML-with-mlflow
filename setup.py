@@ -7,7 +7,7 @@ __version__="0.0.0"
 
 REPO_NAME = "End-to-end-ML-with-mlflow"
 AUTHOR_USER_NAME = "hsiebenou"
-SRC_REPO = "mlproject"
+SRC_REPO = "mlProject"
 AUTHOR_EMAIL = "hermann.siebenou@hotmail.com"
 
 
