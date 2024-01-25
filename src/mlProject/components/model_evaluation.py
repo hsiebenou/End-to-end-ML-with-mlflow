@@ -32,7 +32,7 @@ class ModelEvaluation:
         test_y = test_data[[self.config.target_column]]
 
         mlflow.set_registry_uri(self.config.mlflow_uri)
-        tracking_url_type_store = urlparse(mlflow.get_tracking_url()).scheme
+        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
         with mlflow.start_run():
             predicted_qualities = model.predict(test_x)
@@ -41,7 +41,7 @@ class ModelEvaluation:
 
             # saving metrics as local
             scores = {"rmse": rmse, "mae": mae, "r2": r2}
-            save_json(Path=Path(self.config.metric_file_name), data = scores)
+            save_json(path=Path(self.config.metric_file_name), data = scores)
 
             mlflow.log_params(self.config.all_param)
 
