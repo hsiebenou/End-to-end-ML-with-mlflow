@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/herma/OneDrive/Documents/End-to-end-ML-with-mlflow/mlruns/0/5ca22f5ed99241659bdedf58d4f04801/artifacts
+end_time: 1706209284715
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5ca22f5ed99241659bdedf58d4f04801
+run_name: amusing-bug-902
+run_uuid: 5ca22f5ed99241659bdedf58d4f04801
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706209280958
+status: 3
+tags: []
+user_id: herma

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/herma/OneDrive/Documents/End-to-end-ML-with-mlflow/mlruns/0/7a3b03ca6ce549778705656d9fec90cd/artifacts
+end_time: 1706207970972
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7a3b03ca6ce549778705656d9fec90cd
+run_name: bustling-ant-209
+run_uuid: 7a3b03ca6ce549778705656d9fec90cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706207967467
+status: 3
+tags: []
+user_id: herma

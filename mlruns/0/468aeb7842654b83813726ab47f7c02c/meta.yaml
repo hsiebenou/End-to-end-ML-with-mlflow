@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/herma/OneDrive/Documents/End-to-end-ML-with-mlflow/mlruns/0/468aeb7842654b83813726ab47f7c02c/artifacts
+end_time: 1706207245712
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 468aeb7842654b83813726ab47f7c02c
+run_name: overjoyed-mouse-413
+run_uuid: 468aeb7842654b83813726ab47f7c02c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706207241675
+status: 3
+tags: []
+user_id: herma
