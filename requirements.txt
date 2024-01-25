@@ -1,5 +1,9 @@
 pandas
 mlflow==2.2.2
+mlflow[pipelines]
+mlflow[extras]
+mlflow-skinny
+mpld3==0.5.10
 notebook
 numpy
 scikit-learn
