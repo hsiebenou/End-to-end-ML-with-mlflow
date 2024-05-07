@@ -39,8 +39,8 @@ jobs:
         mypy --install-types
         mypy src/
     - uses: isort/isort-action@master
-        with:
-            requirementsFiles: "requirements.txt test_requirements.txt, lint_requirements.txt"
+      with:
+          requirementsFiles: "requirements.txt test_requirements.txt, lint_requirements.txt"
   Test_unit:
     runs-on: ${{ matrix.os }}
     strategy:
@@ -66,5 +66,3 @@ jobs:
     - name: Run unit test
       run: |
         pytest test.py                  # --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
-
-  
