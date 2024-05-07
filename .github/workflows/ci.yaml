@@ -37,7 +37,10 @@ jobs:
     - name: Lint with mypy
       run: |
         mypy src/
-  Test unit:
+    - uses: isort/isort-action@master
+        with:
+            requirementsFiles: "requirements.txt test_requirements.txt, lint_requirements.txt"
+  Test_unit:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
