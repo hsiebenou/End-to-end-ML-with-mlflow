@@ -12,12 +12,12 @@ on:
 permissions: read-all
 jobs:
   Install_package:
-    runs-on: ubuntu-latest #{{ matrix.os }}
+    runs-on: linux #{{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: ubuntu-latest #{{ matrix.version }}
+          python-version: linux #{{ matrix.version }}
           cache: 'pip'
       - name: List files in the repository
         run: |
