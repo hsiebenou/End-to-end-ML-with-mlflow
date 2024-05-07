@@ -16,6 +16,5 @@ joblib
 types-pyYAML
 Flask
 Flask-Cors
-pyarrow
 -e .
 
