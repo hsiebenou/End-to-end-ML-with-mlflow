@@ -1,0 +1,44 @@
+name: Deploy MLflow projet
+run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
+on:
+  push:
+    branches:
+      - master
+      - dev
+      - releases/**
+    tags:
+      - v2
+      - v1.*
+permissions: read-all
+jobs:
+  Install_package:
+    strategy:
+      matrix:
+        os: [ubuntu-22.04, ubuntu-20.04]
+        version: [10, 12, 14]
+        environment: [staging, production]
+        exclude:
+          - os: ubuntu-22.04
+            version: 12
+            environment: production
+    runs-on: {{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: {{ matrix.version }}
+          cache: 'pip'
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - name: Install requirements
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+  Run_unit_test:
+    run-on: ubuntu-latest
+    needs: Install_package
+    steps: 
+      - name: Run a unit test
+        run:
+          python test.py
