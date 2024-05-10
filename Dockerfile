@@ -11,7 +11,7 @@ WORKDIR ./
 COPY /src /src
 COPY /app.py /app.py
 COPY /main.py /main.py
-COPY /schema.ymal /schema.ymal
+COPY /schema.yaml /schema.yaml
 
 
 # Add test requirements
