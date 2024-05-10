@@ -1,5 +1,5 @@
-name: isort
-
+name: Isort
+run-name: Run isort 
 on:
   push:
     branches:
