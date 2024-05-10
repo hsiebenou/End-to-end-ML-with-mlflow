@@ -1,12 +1,13 @@
-from flask import Flask, render_template, request
 import os
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
-from pathlib import Path
+from flask import Flask, render_template, request
+
+from mlProject import logger
 from mlProject.pipeline.prediction import PredictionPipeline
 from mlProject.utils.common import read_yaml
-from mlProject import logger
-
 
 app = Flask(__name__)
 

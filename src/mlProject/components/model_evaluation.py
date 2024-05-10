@@ -1,15 +1,15 @@
+from pathlib import Path
+from urllib.parse import urlparse
+
 import joblib
 import mlflow
 import mlflow.sklearn
-import pandas as pd
 import numpy as np
-from pathlib import Path
-from urllib.parse import urlparse
-from mlProject.utils.common import save_json
-
+import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from mlProject.entity.config_entity import ModelEvaluationConfig
 
+from mlProject.entity.config_entity import ModelEvaluationConfig
+from mlProject.utils.common import save_json
 
 
 class ModelEvaluation:

@@ -1,8 +1,8 @@
 import pandas as pd
-from mlProject import logger
-from mlProject.utils.common import create_directories
-from mlProject.entity.config_entity import DataValidationConfig
 
+from mlProject import logger
+from mlProject.entity.config_entity import DataValidationConfig
+from mlProject.utils.common import create_directories
 
 
 class DataValidation:
